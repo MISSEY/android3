@@ -8,24 +8,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.saurabh.messingaround.MainActivity"
     tools:showIn="@layout/activity_main">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you happy"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1st button"
-        android:textSize="15sp"
-        android:padding="15dp"
-        android:layout_weight="1"/>
+        android:text="Yes"
+        android:hint="pick me"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2nd button"
-        android:textSize="15sp"
-        android:padding="15dp"
-        android:layout_weight="1"/>
+        android:text="No"
+        android:hint="No pick me"
+        android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
 
 </LinearLayout>
